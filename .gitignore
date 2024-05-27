@@ -141,7 +141,7 @@ env.bak/
 venv.bak/
 
 # Spyder project settings
-.spyderproject
+.spyderprojectgit add 
 .spyproject
 
 # Rope project settings
