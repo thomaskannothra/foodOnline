@@ -1,0 +1,12 @@
+{% if messages %} {% for message in messages %}
+<!--Below is from bootstrap-->
+<!--div class="alert alert-success show-notification" role="alert"-->
+<div class="alert alert-{{message.tags}} show-notification" role="alert">
+  <!--CH 38 for dynamic alert colors-->
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <!--Above three lines from bootstratp, alert, dismiss-->
+  <strong> {{message}}</strong>
+</div>
+{% endfor %} {% endif%}

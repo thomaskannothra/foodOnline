@@ -139,3 +139,9 @@ MEDIA_ROOT=BASE_DIR/'media' # Ch 28
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+from django.contrib.messages import constants as messages
+# from https://docs.djangoproject.com/en/5.0/ref/contrib/messages/
+MESSAGE_TAGS = {
+    messages.ERROR: 'danger',    
+}
