@@ -26,12 +26,19 @@
               </p>
               <hr />
               <div id="restaurant-sets-holder">
-                <form
+                <!--form
                   action="{% url 'registerUser' %}"
                   class="form-fields-set foodbakery-dev-restaurant-form"
                   method="post"
                   action="register-select-package.html"
-                >
+                CH 39-->
+
+                <form
+                action="{% url 'registerUser' %}"
+                class="form-fields-set foodbakery-dev-restaurant-form"
+                method="post"              
+              >
+
                   {% csrf_token %}
                   <!---Changed by TMK CH 34 step 5-->
                   <ul
