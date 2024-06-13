@@ -40,11 +40,13 @@ class UserManger(BaseUserManager):
 
 class User(AbstractBaseUser):
     ## used for individual users
-    RESTAURANT =1
+    # CH 43RESTAURANT =1
+    VENDOR=1
     CUSTOMER=2
 
     ROLE_CHOICE=(
-        (RESTAURANT,'Restaurant'),
+    #ch 43 (RESTAURANT,'Restaurant'),
+        (VENDOR,'Vendor'),
         (CUSTOMER,'Customer'),
     )
     first_name=models.CharField(max_length=50)
